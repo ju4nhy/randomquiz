@@ -24,38 +24,44 @@ export interface Data {
 
 export interface FrontPageProps {
     name: string;  
-    ready: boolean;      
-    setName: React.Dispatch<React.SetStateAction<string>>;
-    setReady: React.Dispatch<React.SetStateAction<boolean>>;
-    dataToUse: DataProps[]
-    setDataToUse: React.Dispatch<React.SetStateAction<DataProps[]>>;
+    ready: boolean;  
+    dataToUse: DataProps[];   
+    setName: (name: string) => void;
+    setReady: (ready: boolean) => void;
+    setDataToUse: (data: DataProps[]) => void
+    //setName: React.Dispatch<React.SetStateAction<string>>;
+    //setReady: React.Dispatch<React.SetStateAction<boolean>>;
+    //setDataToUse: React.Dispatch<React.SetStateAction<DataProps[]>>;
 }
 
 export interface QuizProps {
     name: string;  
-    setName: React.Dispatch<React.SetStateAction<string>>;
-    setReady: React.Dispatch<React.SetStateAction<boolean>>;
-    dataToUse: DataProps[]
+    dataToUse: DataProps[];
+    setName: (name: string) => void;
+    setReady: (ready: boolean) => void;
+    //setName: React.Dispatch<React.SetStateAction<string>>;
+    //setReady: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 export interface QuizHeaderProps {
     name: string;
-    dataToUse: DataProps[];
     score: number;
+    dataToUse: DataProps[];
     handleQuit: () => void; 
 }
 
 export interface QuizViewProps {
-    counter: number,
     QA: DataProps | undefined,
     inputValue: string,
+    counter: number,
     error: string,
     correct: boolean,
     showHint: boolean,
-    setShowHint: React.Dispatch<React.SetStateAction<boolean>>;
-    handleClick: () => void; 
+    setShowHint: (showHint: boolean) => void;
     handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void; 
+    handleClick: () => void; 
     handleRestart: () => void
+    //setShowHint: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 export interface QuizCompletedProps {

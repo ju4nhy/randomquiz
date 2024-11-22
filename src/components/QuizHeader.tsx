@@ -1,5 +1,5 @@
 import { QuizHeaderProps } from '../types.ts';
-import logo from '../assets/logo.png'
+import logo from '../assets/logo.png';
 
 const QuizHeader = ({ dataToUse, name, score, handleQuit }: QuizHeaderProps) => {
   return (
@@ -16,8 +16,8 @@ const QuizHeader = ({ dataToUse, name, score, handleQuit }: QuizHeaderProps) => 
         <p className="text-green-600">{score} / {dataToUse.length * 10}</p>
       </div>
       <button className="w-auto rounded-md text-xl text-white font-extrabold shadow-lg bg-red-500 hover:bg-red-400 mt-4 p-4 px-8 mr-4" onClick={handleQuit}>QUIT</button>
-  </div>
-  )
-}
+    </div>
+  );
+};
 
-export default QuizHeader
+export default QuizHeader;

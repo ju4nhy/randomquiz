@@ -1,32 +1,34 @@
 import { DataProps, Data } from "./types";
 
+/* Data examples */
+
 const general: DataProps[] = [
-    {
-      "id": 1,
-      "question": "The more there is, the less you see. What am I?",
-      "answer": "Darkness"
-    },
-    {
-      "id": 2,
-      "question": "I have keys but open no locks. I have space but no room. You can enter, but you can't go inside. What am I?",
-      "answer": "Keyboard"
-    },
-    {
-      "id": 3,
-      "question": "What can be broken without being touched or even seen?",
-      "answer": "Promise"
-    },
-    {
-      "id": 4,
-      "question": "What is so fragile that saying its name breaks it?",
-      "answer": "Silence"
-    },
-    {
-      "id": 5,
-      "question": "I can only live where there is light, but I die if light shines on me. What am I?",
-      "answer": "Shadow"
-    }
-]
+  {
+    "id": 1,
+    "question": "The more there is, the less you see. What am I?",
+    "answer": "Darkness"
+  },
+  {
+    "id": 2,
+    "question": "I have keys but open no locks. I have space but no room. You can enter, but you can't go inside. What am I?",
+    "answer": "Keyboard"
+  },
+  {
+    "id": 3,
+    "question": "What can be broken without being touched or even seen?",
+    "answer": "Promise"
+  },
+  {
+    "id": 4,
+    "question": "What is so fragile that saying its name breaks it?",
+    "answer": "Silence"
+  },
+  {
+    "id": 5,
+    "question": "I can only live where there is light, but I die if light shines on me. What am I?",
+    "answer": "Shadow"
+  }
+];
 
 const random: DataProps[] = [
   {
@@ -54,7 +56,7 @@ const random: DataProps[] = [
     "question": "What is a room you can’t enter?",
     "answer": "Mushroom"
   },
-]
+];
 
 const movies: DataProps[] = [
   {
@@ -82,7 +84,7 @@ const movies: DataProps[] = [
     "question": "May the force...",
     "answer": "be with you"
   }
-]
+];
 
 const music: DataProps[] = [
   {
@@ -110,7 +112,7 @@ const music: DataProps[] = [
     "question": "Which artist released the song 'Dr. Online' in 2001?",
     "answer": "Zeromancer"
   },
-]
+];
 
 const esports: DataProps[] = [
   {
@@ -118,7 +120,7 @@ const esports: DataProps[] = [
     "question": "Testing?",
     "answer": "Testing"
   }
-]
+];
 
 const esports2: DataProps[] = [
   {
@@ -126,8 +128,8 @@ const esports2: DataProps[] = [
     "question": "Testing?",
     "answer": 'Testing'
   }
-]
+];
 
 const data: Data = { general, random, movies, music, esports, esports2 };
 
-export default data
+export default data;
